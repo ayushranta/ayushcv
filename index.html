@@ -82,7 +82,22 @@
     --bg-light: #f5f7fa;
     --text-dark: #1e293b;
 }
+/* Profile Picture */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto -40px; /* center and add spacing below */
+    border-radius: 50%; /* makes it a circle */
+    overflow: hidden;
+    border: 4px solid rgba(255,255,255,0.6); /* optional border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);  /* subtle shadow */
+}
 
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures image fills the circle nicely */
+}
         /* Hero Section */
         #home {
             height: 100vh;
@@ -355,6 +370,10 @@
     <!-- Home -->
     <section id="home">
         <div class="container">
+            <div class="profile-pic">
+    <img src="profile.jpg" alt="Ayush Ranta">
+</div>
+
             <h1>Ayush Ranta</h1>
             <div class="title">Full-Stack Developer | Data & Business Analytics</div>
             <p class="summary">Building functional, structured systems with hands-on experience in full-stack web development, data analytics, and backend fundamentals.</p>
@@ -525,3 +544,4 @@
 
 </body>
 </html>
+
